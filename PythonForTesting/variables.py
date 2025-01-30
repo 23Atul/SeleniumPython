@@ -38,7 +38,13 @@ print("b: ", b, ", address of b: ", id(b))  # b: 801 , address of b: ...4603
 
 import keyword
 
-keywords = keyword.kwlist
-print(keywords)
+abcd = keyword.kwlist
+print(abcd)
 
 # ['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+
+
+# keyword.iskeyword(s)
+# Return True if s is a Python keyword.
+
+
