@@ -55,20 +55,20 @@ print(NAME.isupper()) # True
 
 #   split (seperator)        -->     splits the string at specified seperator and returns a list([])  
 
-str = "My name is Atul Raman and I am an engineer."
+str1 = "My name is Atul Raman and I am an engineer."
 
-arr = str.split()    
+arr = str1.split()    
 
 print(arr)      # ['My', 'name', 'is', 'Atul', 'Raman', 'and', 'I', 'am', 'an', 'engineer.']
 
-print(str)  # My name is Atul Raman and I am an engineer.   --> do not modify original string
+print(str1)  # My name is Atul Raman and I am an engineer.   --> do not modify original string
 
 
 # rsplit(seperator)     -->      splits string into list starting from right
 
-str = "My name is Atul Raman and I am an engineer."
+str2 = "My name is Atul Raman and I am an engineer."
 
-arr = str.rsplit(" ")
+arr = str2.rsplit(" ")
 print(arr)
 
 
@@ -76,17 +76,17 @@ print(arr)
 
 #   strip(character)     -->     Returns the trimmed version of the string, trims the string for specfied character ..by default is whitespace
 
-str = "           My Name Is Atul Raman And I Am An Engineer                "
+str3 = "           My Name Is Atul Raman And I Am An Engineer                "
 
-x = str.strip()
+x = str3.strip()
 print(x)  #  "My Name Is Atul Raman And I Am An Engineer"
-print(str)  #  "           My Name Is Atul Raman And I Am An Engineer                "  # do not modify the original string
+print(str3)  #  "           My Name Is Atul Raman And I Am An Engineer                "  # do not modify the original string
 
 #lstrip()
-print(str.lstrip())  # "My Name Is Atul Raman And I Am An Engineer                "
+print(str3.lstrip())  # "My Name Is Atul Raman And I Am An Engineer                "
 
 #rstrip()
-print(str.rstrip())  # "           My Name Is Atul Raman And I Am An Engineer"
+print(str3.rstrip())  # "           My Name Is Atul Raman And I Am An Engineer"
 
 
 
@@ -94,15 +94,15 @@ print(str.rstrip())  # "           My Name Is Atul Raman And I Am An Engineer"
 
 #   replace(old, new, count (optional))     -->     replaces the specified phrase with another specified phrase
 
-str = "My name is Atul Raman and I am an engineer."
+str4 = "My name is Atul Raman and I am an engineer."
 
-x = str.replace("m","@")
+x = str4.replace("m","@")
 
 print(x)   # My na@e is Atul Ra@an and I a@ an engineer.
-print(str)  # My name is Atul Raman and I am an engineer.   # do not modify original string
+print(str4)  # My name is Atul Raman and I am an engineer.   # do not modify original string
 
 
-x = str.replace("a", "#",3 )
+x = str4.replace("a", "#",3 )
 print(x)  # My n#me is Atul R#m#n and I am an engineer.  #replaces only 3 a with # rest all a are as it is
 
 
@@ -112,13 +112,13 @@ print(x)  # My n#me is Atul R#m#n and I am an engineer.  #replaces only 3 a with
 
 #   find( sub, start, end)      -->     searches specified value in the string and returns the postion of the first match else returns -1
 
-str = "My name is Atul Raman and I am an engineer."
+str5 = "My name is Atul Raman and I am an engineer."
 
-print(str.find("Atul"))  # 11
+print(str5.find("Atul"))  # 11
 
-print(str.find("ATUL"))  # -1
+print(str5.find("ATUL"))  # -1
 
-print(str.find("My", 5 ,10)) # -1
+print(str5.find("My", 5 ,10)) # -1
 
 
 
@@ -127,7 +127,7 @@ print(str.find("My", 5 ,10)) # -1
 
 #    index(sub, start, end)     -->     same as find but raises value error when specified value is not found
 
-str = "My name is Atul Raman and I am an engineer."
+str6 = "My name is Atul Raman and I am an engineer."
 
-print(str.index("Atul")) # 11
-print(str.index("atul"))  # ValueError: substring not found
+print(str6.index("Atul")) # 11
+print(str6.index("atul"))  # ValueError: substring not found
