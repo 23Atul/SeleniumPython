@@ -18,9 +18,9 @@ print(set3)  # {None, True, 99.99, 'Atul', 10}
 
 
 # sets do not accept the duplicate values
-set4 = {10,20,30,10,40,50,10,60,70,10,80,90,10}
+# set4 = {10,20,30,10,40,50,10,60,70,10,80,90,10}
 
-print(set4)  # {70, 40, 10, 80, 50, 20, 90, 60, 30} # eleminates the duplicate value
+# print(set4)  # {70, 40, 10, 80, 50, 20, 90, 60, 30} # eleminates the duplicate value
 
 
 # defining using set method  :- set((items))
@@ -28,8 +28,8 @@ print(set4)  # {70, 40, 10, 80, 50, 20, 90, 60, 30} # eleminates the duplicate v
 set5 = set((1,2,3,4,5,6))
 print(set5)  # {1, 2, 3, 4, 5, 6}
 
-set6 = set((1,1,1,1,1,2,2,2,2,3,3,3,3,3,4,4,4,))
-print(set6)  # {1, 2, 3, 4}
+# set6 = set((1,1,1,1,1,2,2,2,2,3,3,3,3,3,4,4,4,))
+# print(set6)  # {1, 2, 3, 4}
  
 
 
@@ -48,7 +48,7 @@ print(set8, type(set8))  # set() <class 'set'>
 
 # length of set :- len()
 
-set9 = {10,20,30,40,50,50}
+set9 = {10,20,30,40,50}
 print(len(set9))  # 5
 
 
