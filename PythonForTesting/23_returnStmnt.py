@@ -4,8 +4,8 @@
 def addition(x,y):
     return x+y
 
-sum = addition(99,101)
-print(sum)  # 200
+sum1 = addition(99,101)
+print(sum1)  # 200
 
 # ---------------------------------------------------
 
