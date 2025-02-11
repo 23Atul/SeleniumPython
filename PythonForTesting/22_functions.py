@@ -37,8 +37,8 @@ addition2()  # 200
 # ------------------------------------
 
 
-def addition3(x,y):
-    print(x+y)
+def addition3(p,q):
+    print(p+q)
 
 addition3(23,33) # 56
 addition3(99,101) # 200
