@@ -33,7 +33,7 @@ while i < 10:
 
     i += 1
     continue
-    print("inside while loop", i)
+#    print("inside while loop", i)
     
 print("out of the while loop")
 
@@ -52,8 +52,8 @@ x=0
 while x<=10:
     print(x)
     x+=1
-else:
-    print("out of loop")
+#else:
+#    print("out of loop")
 
 
 # 0
@@ -81,6 +81,7 @@ while x <= 10:
         break
 else:
     print("out of loop")
+
 
 
 # 0
