@@ -53,6 +53,6 @@ print(user1Copy)  # {'fname': 'Atul', 'lname': 'Raman', 'age': 24, 'city': 'Ranc
 
 
 
-# clear() --->  removes all the elements from the dictionary
+# clear() --->  removes all the elements from the dictionary, returns the empty dictionary.
 print(user1Copy.clear()) # None
 print(user1Copy) # {}
