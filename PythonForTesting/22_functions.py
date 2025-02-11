@@ -37,9 +37,9 @@ addition2()  # 200
 # ------------------------------------
 
 
-def addition3(p,q):  # arguments
+def addition3(p,q):  # parameters
     print(p+q)
 
-addition3(23,33) # 56  # parameters
-addition3(99,101) # 200  # parameters
+addition3(23,33) # 56  # arguments
+addition3(99,101) # 200  # arguments
 
