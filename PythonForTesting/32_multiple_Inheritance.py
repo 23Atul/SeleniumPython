@@ -49,3 +49,11 @@ print(Micky.mro())
 
 
 
+# JumpCharacter        MoveCharacter
+#         \             /
+#          \           /
+#           \         /
+#            \       /
+#             \     /
+#              \   /
+#             Pokemon
