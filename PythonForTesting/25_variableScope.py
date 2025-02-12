@@ -26,15 +26,15 @@ var_scope1()  # 20
 
 # Global Scope
 
-x = 40  # x has a global scope
+x1 = 40  # x has a global scope
 def var_scope2():
-    print(x)
+    print(x1)
 
 
 var_scope2()  # 40
-print(x) # 40
+print(x1) # 40
 
-# x has a global scope and can be accessed from anywhere.
+# x1 has a global scope and can be accessed from anywhere.
 
 #-------------------------------------------------------------------------------
 
@@ -68,23 +68,23 @@ var_scope3()  # 99
 
 # Local --->  every function has its own local variable and it will be prefered as its value
 
-x = 0
+x3 = 0
 
 def variable_scope1():
-    x = 10
-    print("parent ", x)
+    x3 = 10
+    print("parent ", x3)
     
     def child_scope():
-        x = 20
-        print("child ",x)
+        x3 = 20
+        print("child ",x3)
 
         def grandChild_scope():
-            x = 30
-            print("grandchild ", x)
+            x3 = 30
+            print("grandchild ", x3)
 
             def greatGrandChild_scope():
-                x = 40
-                print("greatGrandChild ", x)
+                x3 = 40
+                print("greatGrandChild ", x3)
 
 
             greatGrandChild_scope()
@@ -95,7 +95,7 @@ def variable_scope1():
 
             
 variable_scope1()
-print("global ",x)
+print("global ",x3)
 
 
 # parent  10
@@ -109,23 +109,23 @@ print("global ",x)
 
 # Enclosing  --->  if any block of function has not defined the value of x then it will take the enclosing value ie. value of x which its parent holds.
 
-x = 0
+x4 = 0
 
 def variable_scope2():
-    x = 10
-    print("parent ", x)
+    x4 = 10
+    print("parent ", x4)
 
     def child_scope():
         
-        print("child ", x)
+        print("child ", x4)
 
         def grandChild_scope():
-            x = 30
-            print("grandchild ", x)
+            x4 = 30
+            print("grandchild ", x4)
 
             def greatGrandChild_scope():
                 
-                print("greatGrandChild ", x)
+                print("greatGrandChild ", x4)
 
             greatGrandChild_scope()
 
@@ -135,7 +135,7 @@ def variable_scope2():
 
 
 variable_scope2()
-print("global ", x)
+print("global ", x4)
 
 
 # parent  10
@@ -153,24 +153,24 @@ print("global ", x)
 # Global  --->  if no value is assigned in any of the levels then it will take the value assigned in global scope.
 
 
-x = 0
+x5 = 0
 
 
 def variable_scope3():
 
-    print("parent ", x)
+    print("parent ", x5)
 
     def child_scope():
 
-        print("child ", x)
+        print("child ", x5)
 
         def grandChild_scope():
 
-            print("grandchild ", x)
+            print("grandchild ", x5)
 
             def greatGrandChild_scope():
 
-                print("greatGrandChild ", x)
+                print("greatGrandChild ", x5)
 
             greatGrandChild_scope()
 
@@ -180,7 +180,7 @@ def variable_scope3():
 
 
 variable_scope3()
-print("global ", x)
+print("global ", x5)
 
 
 # parent  0
