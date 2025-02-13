@@ -1,23 +1,6 @@
-2
-3
-4
-5
-5
-6
-7
-7
-6
-88
-0
-2
-3
-4
-5
-5
-6
-7
-7
-6
-88
-0
+"My Name is Atul Raman"
+"I am 24 years old"
+"I am a software engineer"
+"I have done a b.tech from CV Raman Global University"
+"Ok, Thank You, Byee Byee"
 
