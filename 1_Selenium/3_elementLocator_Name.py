@@ -8,12 +8,11 @@ from selenium.webdriver.common.by import By  # to use By
 import time
 
 
-class DemoFindElementByID:
+class DemoFindElementByName:
 
-    def locator_by_id_demo(self):
+    def locator_by_name_demo(self):
 
-        driver = webdriver.Chrome(service=ChromeService(
-            ChromeDriverManager().install()))
+        driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
         driver.get("https://secure.yatra.com/social/common/yatra/signin.htm")
 
         driver.find_element(By.NAME, "login-input").send_keys("XYZ@gmail.com")
@@ -21,5 +20,5 @@ class DemoFindElementByID:
         time.sleep(3)
 
 
-findbyID = DemoFindElementByID()
-findbyID.locator_by_id_demo()
+findbyID = DemoFindElementByName()
+findbyID.locator_by_name_demo()
