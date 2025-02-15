@@ -26,5 +26,5 @@ class DemoFindElementByXPath:
         time.sleep(3)
 
 
-findbyID = DemoFindElementByXPath()
-findbyID.locator_by_xpath_demo()
+findbyXpath = DemoFindElementByXPath()
+findbyXpath.locator_by_xpath_demo()

@@ -20,5 +20,5 @@ class DemoFindElementByName:
         time.sleep(3)
 
 
-findbyID = DemoFindElementByName()
-findbyID.locator_by_name_demo()
+findbyName = DemoFindElementByName()
+findbyName.locator_by_name_demo()
