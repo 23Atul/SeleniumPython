@@ -1,5 +1,5 @@
 
-# Locating web element by ID
+# Locating web element by NAME
 
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
