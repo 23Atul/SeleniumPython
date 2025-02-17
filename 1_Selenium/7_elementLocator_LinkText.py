@@ -6,7 +6,6 @@
 # to make the browser click on the "Click Me" text we use LinkText Locator
 
 # find_element(By.LINK_TEXT, "link text")  : - finds the clickable text ie. link and clicks on it using .click() method.
-# find_element(By.PARTIAL_LINK_TEXT, "partial link text")
 
 
 from selenium import webdriver
