@@ -18,6 +18,8 @@ class DemogetText:
             ChromeDriverManager().install()))
         driver.get("https://yatra.com")
 
+
+        # we can use any element locator here
         text = driver.find_element(
             By.XPATH, "//span[contains(text(),'*Offer valid on ICICI Bank Credit Cards Transactio')]"
             ).text # its a property not a method
