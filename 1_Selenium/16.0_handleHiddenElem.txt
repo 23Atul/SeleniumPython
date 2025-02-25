@@ -1,0 +1,21 @@
+
+# we have seen many a times some part of the webpage is hidden and comes to sight when a perticular action is perfomed. 
+
+# is_displayed()
+
+when any web element is hidden, then there are 2 possibilities.
+
+1. the element is present in DOM and its styling is done as display=none when hidden and display=block when button is pressed.
+eg- # https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
+# in this toggle hide show a message comes only when a button is pressed.
+style="display: block;"
+style="display: none;"
+
+2. the element is not present in the DOM and when button is pressed or condition is satisfied the DOM creates it and destroyes it accordingly.
+eg- # https://www.yatra.com/hotels
+# in this option for age of child comes only when we increase the value of number of child from 0.
+
+
+so we cannot use is_displayed() method in 2nd case as it will return the exception.
+
+
