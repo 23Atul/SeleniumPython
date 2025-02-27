@@ -1,4 +1,5 @@
 
+# single value select from dropdown
 # here we will look how we can select a value from dropdown that allows only one value to get selected.
 
 from selenium import webdriver
@@ -6,7 +7,7 @@ from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By  # to use By
 import time
-from selenium.webdriver.support.select import Select
+from selenium.webdriver.support.select import Select # this helps us to check whether the select tag is present in web element or not so that methods we are using for select tag can be used.
 
 
 class DemoDropdown:
