@@ -1,0 +1,4 @@
+Similar to handling auto suggestion, here also we get 2 cases.
+1st in which we can select any date by brute force way ie. hard code the date and copy its xpath and perorm any operation on it.
+2nd way is to select automate the calender so that it can choose any dynamic date provided.
+
