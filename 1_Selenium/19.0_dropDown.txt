@@ -37,3 +37,8 @@ impoeting Select class --> from selenium.webdriver.support.select import Select
 3. deselect_by_value()
 4. deselect_by_visible_text()
 
+
+** ------- some more select methods ----------
+1. first_selected_text(text) ---> the first selected option in this select tag (or the currently selected option in a normal select)
+2. options ---> returns a list of all options belonging to the select tag.
+
