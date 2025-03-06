@@ -2,6 +2,9 @@ Similar to handling auto suggestion, here also we get 2 cases.
 1st in which we can select any date by brute force way ie. hard code the date and copy its xpath and perorm any operation on it.
 2nd way is to select automate the calender so that it can choose any dynamic date provided.
 
+
+
+
 1st 
 
 class DemohandleCalendar:
@@ -23,3 +26,7 @@ class DemohandleCalendar:
 findbyXpath = DemohandleCalendar()
 findbyXpath.handleCalendar()
 
+
+
+
+we should avoid ther hard coded value, 2nd case shows how to handle dynamic value.
