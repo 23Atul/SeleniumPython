@@ -32,11 +32,26 @@ class demo_handle_iFrames:
             ChromeDriverManager().install()))
         driver.get(
             "https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_iframe_frameborder_css")
-        # driver.maximize_window()
+        driver.maximize_window()
 
         # switched to parent iframe
+        # <iframe id = "iframeResult" name = "iframeResult" allowfullscreen = "true" xpath = "1" > </iframe >
+
+        # 1. Switch with iframe locator
         driver.switch_to.frame(driver.find_element(By.XPATH,"//iframe[@id='iframeResult']"))
+
+        # 2. Switch with ID
+        # driver.switch_to.frame("iframeResult")
+
+        # 3. Switch with name
+        # driver.switch_to.frame("iframeResult")
+
+        # 4. Switch with index
+        # driver.switch_to.frame(0)
+
+
         time.sleep(3)
+        # cant switch to this(child) frame from body, we need to first switch to parent forst, which we did in above lines.
         driver.switch_to.frame(0) # there are 3 iframes under parent iframe so we are choosing 1st.
         time.sleep(3)
 
