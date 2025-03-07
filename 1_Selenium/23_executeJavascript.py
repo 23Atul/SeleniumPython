@@ -9,7 +9,7 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.common.by import By  # to use By
+# from selenium.webdriver.common.by import By  # to use By
 import time
 # this helps us to check whether the select tag is present in web element or not so that methods we are using for select tag can be used.
 
