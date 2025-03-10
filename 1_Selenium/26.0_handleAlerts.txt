@@ -42,3 +42,16 @@ if (person == null || person == "") {
   text = "Hello " + person + "! How are you today?";
 }
 -----------------------------------------------------------
+
+
+once we click on button and popup comes, just like frames, in popup also we need to switch window to access popups
+selenium gives few class/methods to handle popups
+
+--> driver.switch_to.alert.accept()  # accept the alert ie. click on OK
+
+--> driver.switch_to.alert.dismiss()  # dismiss the alert is. click on CANCEL
+
+--> driver.switch_to.alert.send_keys("keys") # used to send required keys in Prompt Box.
+
+
+driver.switch_to.alert.text() # prints the text written in popup box
