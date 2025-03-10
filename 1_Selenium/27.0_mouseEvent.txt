@@ -17,8 +17,10 @@ Clicks an element.
 2. click_and_hold(on_element: WebElement | None = None)
 Holds down the left mouse button on an element.
 
+
 3. context_click(on_element: WebElement | None = None)
-ActionChains
+Performs a context-click (right click) on an element.
+
 
 4. double_click(on_element: WebElement | None = None)
 Double-clicks an element.
