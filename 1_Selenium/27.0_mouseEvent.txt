@@ -5,6 +5,11 @@ ActionChains are a way to automate low level interactions such as mouse movement
 mouse button actions, key press, and context menu interactions. 
 This is useful for doing more complex actions like hover over and drag and drop.
 
+action chain helps us to chain many actions together like,
+move_to_element -> double click -> click
+so these actions get queued up one after another
+to make these action do their job one after another at the end we write .perform()
+
 
 1. click(on_element: WebElement | None = None)
 Clicks an element.
