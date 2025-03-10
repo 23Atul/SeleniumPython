@@ -50,10 +50,11 @@ class demo_handleAlerts:
         # Please enter your name:
 
 
-
-
-
-        
+        # we can even write the same code using different way
+        # import Alert
+        # - -> Alert(driver).accept()
+        # - -> Alert(driver).dismiss()
+        # - -> Alert(driver).send_keys("keys)
 
 
 findbyXpath = demo_handleAlerts()

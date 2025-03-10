@@ -55,3 +55,12 @@ selenium gives few class/methods to handle popups
 
 
 driver.switch_to.alert.text() # prints the text written in popup box
+
+
+we can even write the same code using different way
+import Alert
+
+--> Alert(driver).accept()
+--> Alert(driver).dismiss()
+--> Alert(driver).send_keys("keys)
+
