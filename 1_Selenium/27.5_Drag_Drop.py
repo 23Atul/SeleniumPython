@@ -33,7 +33,7 @@ class demo_dragDrop:
         time.sleep(4)
 
 # 2 --> drag and drop using co-ordinates.
-        ActionChains(driver).drag_and_drop_by_offset(elem_drag,60,80).perform()
+        ActionChains(driver).drag_and_drop_by_offset(elem_drag,60,80).perform() # co-ordinates should be in the range of the page wrt to the draggable object.
         time.sleep(4)
 
 
