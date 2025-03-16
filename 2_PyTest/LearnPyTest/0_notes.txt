@@ -20,3 +20,11 @@ Collected 3 test cases from the file.
 All 3 tests passed (... represents successful test execution).
 Total execution time was 0.06 seconds.
 Everything looks perfect! ✅ Do you need help with understanding the test results or improving the test cases?
+
+---------------------------------------------------------
+
+pytest --> run test case
+pytest -v --> gives list of all the tc with its status
+pytest --help --> all statement with test case
+pytest -v -s --> test case status with print statement
+pytest -vsk log --> by writing k log we specify that run only those tc which has log in its name.
