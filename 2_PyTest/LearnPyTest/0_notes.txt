@@ -28,3 +28,4 @@ pytest -v --> gives list of all the tc with its status
 pytest --help --> all statement with test case
 pytest -v -s --> test case status with print statement
 pytest -vsk log --> by writing k log we specify that run only those tc which has log in its name.
+
