@@ -1,0 +1,22 @@
+
+right corner 3 dots click --> configure editor click --> search json --> file is created at corner
+setting.json open and add these three lines --> 
+    "python.testing.pytestEnabled": true,
+    "python.testing.pytestArgs": ["SeleniumPython/2_PyTest/LearnPyTest"], // Change "tests" to your test folder name
+    "python.testing.unittestEnabled": false
+
+
+to run the pytest 
+in terminal --> if in pyetst folder then --> pytest filename  eg. login_test.py
+in terminal --> if in root folder then --> pytest complete path of the file eg. pytest SeleniumPython/2_PyTest/learnPyTest/test_login.py
+
+
+Yes! Your test ran successfully. 🎉
+
+Here’s what happened:
+
+PyTest found and executed your test file (login_test.py).
+Collected 3 test cases from the file.
+All 3 tests passed (... represents successful test execution).
+Total execution time was 0.06 seconds.
+Everything looks perfect! ✅ Do you need help with understanding the test results or improving the test cases?
