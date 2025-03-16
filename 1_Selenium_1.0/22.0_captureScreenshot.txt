@@ -1,0 +1,40 @@
+# we take ss to document the response the web elemet is giving either correct or in-correct and examine in which step the web ekement is failing.
+
+# if our script is able to capture the ss on the step it is failing then it becomes very easy to track on which particular screen or step the issue has happened and we can even raise defect quickly.
+
+# 1.
+# get_full_page_screenshot_as_file(filename) → bool
+# Saves a full document screenshot of the current window to a PNG image file. Returns False if there is any IOError, else returns True. Use full paths in your filename.
+
+# 2.
+# get_full_page_screenshot_as_png() → bytes
+# Gets the full document screenshot of the current window as a binary data.
+
+
+# 3.
+# save_full_page_screenshot(filename) → bool
+# Saves a full document screenshot of the current window to a PNG image file. Returns False if there is any IOError, else returns True. Use full paths in your filename.
+
+
+# get_full_page_screenshot_as_file(filename) → bool
+# Saves a full document screenshot of the current window to a PNG image file. Returns False if there is any IOError, else returns True. Use full paths in your filename.
+
+
+# get_full_page_screenshot_as_png() → bytes
+# Gets the full document screenshot of the current window as a binary data.
+
+
+# get_screenshot_as_file(filename) → bool
+# Saves a screenshot of the current window to a PNG image file. Returns False if there is any IOError, else returns True. Use full paths in your filename.
+
+
+# get_screenshot_as_png() → bytes
+# Gets the screenshot of the current window as a binary data.
+
+
+# save_screenshot(filename) → bool
+# Saves a screenshot of the current window to a PNG image file. Returns False if there is any IOError, else returns True. Use full paths in your filename.
+
+
+# screenshot(filename) → bool
+# Saves a screenshot of the current element to a PNG image file. Returns False if there is any IOError, else returns True. Use full paths in your filename.

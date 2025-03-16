@@ -1,0 +1,49 @@
+
+Waits are used to rectify the syncronisation issue that happens within the code.
+Till now we had been using the hard coded value of waits in form of time.sleep()
+in which we used to give the the value of our choise to make the code behave in synchronous manner.
+
+
+Waits are mainly of two types:
+------------------------------
+1. Implicit
+2. Explicit
+3. Fluent 
+
+Both Implicit and Explicit waits are dynamic waits.
+ie. even if we have specified the condition to click on button 2 sec after after the page has loaded using time.sleep() then also the webdriver 
+will click on  the page after the page has fully loaded and not only in 2 sec to give and error, 
+it will wait for page to full load its contents then click.
+
+Implicit Wait:-
+---------------
+1. implicit wait tells yhe webdriver maximum wait time when searching for elements before throwing Exception.
+2. implicit wait is global, it is applicable to all the webelements in the script.
+3. since implicit wait applies to all webelements you do not specify "Expected Conditions" on the element to be located.
+
+Tells Selenium to wait for a certain amount of time before throwing a NoSuchElementException.
+Applied globally and affects all elements.
+Not recommended for dynamic web pages.
+
+
+Explicit wait:-
+----------------
+1. Explicit wait tells the webdriver to halt the execution until a particular condition is met or the maximum time has passed.
+2. Explicit wait time is applicable only to those web elements which are specified by the user.
+3. Explicit wait requires the expected condition to be specified for the elemets like "wait until the Element Is Enabled".
+
+Waits until a specific condition is met for an element.
+More flexible than implicit wait.
+Uses WebDriverWait along with expected_conditions.
+
+
+Fluent wait:-
+-------------
+1. In this we can specify the time to wait for the condition and the poling frequency.
+2. poling frequency is the frequency with which to check the condition ie. Checks for the condition at regular intervals until the maximum timeout.
+3. Useful for handling elements that load at unpredictable times.
+
+More advanced wait mechanism.
+Checks for the condition at regular intervals until the maximum timeout.
+Useful for handling elements that load at unpredictable times.
+

@@ -1,0 +1,13 @@
+
+# How to Install and use SelectorHub
+
+when it comes to locate web elements manually on web page, we can directly go to inspect and click on that web element and it will highlight the part on DOM;
+but when we want to do it through automation we do it with the help of locators.
+
+Manually --> go to inspect --> click on web element --> this will highlight the xml code for that web element --> right click --> copy --> copy XPath
+this will give a very long XPath.
+
+
+url --> https://selectorshub.com/
+SelectorsHub: Next Gen XPath and CSS Selectors Plugin
+

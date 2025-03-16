@@ -1,0 +1,73 @@
+url -  https://selenium-python.readthedocs.io/api.html#module-selenium.webdriver.remote.webelement
+
+7.2. Action Chains
+ActionChains are a way to automate low level interactions such as mouse movements, 
+mouse button actions, key press, and context menu interactions. 
+This is useful for doing more complex actions like hover over and drag and drop.
+
+action chain helps us to chain many actions together like,
+move_to_element -> double click -> click
+so these actions get queued up one after another
+to make these action do their job one after another at the end we write .perform()
+
+
+1. click(on_element: WebElement | None = None)
+Clicks an element.
+
+2. click_and_hold(on_element: WebElement | None = None)
+Holds down the left mouse button on an element.
+
+
+3. context_click(on_element: WebElement | None = None)
+Performs a context-click (right click) on an element.
+
+
+4. double_click(on_element: WebElement | None = None)
+Double-clicks an element.
+
+
+5. drag_and_drop(source: WebElement, target: WebElement)
+Holds down the left mouse button on the source element, 
+then moves to the target element and releases the mouse button.
+source: The element to mouse down.
+target: The element to mouse up.
+
+
+6. drag_and_drop_by_offset(source: WebElement, xoffset: int, yoffset: int)
+Holds down the left mouse button on the source element, then moves to the target offset and releases the mouse button.
+source: The element to mouse down.
+xoffset: X offset to move to.
+yoffset: Y offset to move to.
+
+
+7. key_down(value: str, element: WebElement | None = None)
+Sends a key press only, without releasing it. Should only be used with modifier keys (Control, Alt and Shift).
+value: The modifier key to send. Values are defined in Keys class.
+element: The element to send keys. If None, sends a key to current focused element.
+
+
+8. key_up(value: str, element: WebElement | None = None)
+Releases a modifier key.
+value: The modifier key to send. Values are defined in Keys class.
+element: The element to send keys. If None, sends a key to current focused element.
+
+
+
+9. move_to_element(to_element: WebElement)
+Moving the mouse to the middle of an element.
+
+
+10. pause(seconds: float | int) → ActionChains
+Pause all inputs for the specified duration in seconds.
+
+11. perform()
+Performs all stored actions.
+
+12. release(on_element: WebElement | None = None)
+Releasing a held mouse button on an element.
+
+13. scroll_to_element(element: WebElement) → ActionChains
+If the element is outside the viewport, scrolls the bottom of the element to the bottom of the viewport.
+
+14. send_keys(*keys_to_send: str) → ActionChains
+Sends keys to current focused element.

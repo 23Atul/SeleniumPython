@@ -1,0 +1,16 @@
+
+---------------- W E B   E L E M E N T --------------------
+
+Any thing wich is visible on web page on which a user interacts is called as web element. 
+eg. button, form, color, text, etc.
+
+DOM --> Document Object Model is a way of present the web elements or HTML document as Object. Web elements are the part of DOM
+
+web page --> left click --> inspect --> DOM --> web elements
+
+
+Manual vs Automation
+when we interact with the web elements manually we can find them easily but when we interact with the web elements through scripts then first we need to locate the web elements through code so we can perform any operations on it.
+
+ie. we need to locate those web elemets, so selenium provides many way through which we can locate the web elements on web page.
+we can identify them using their unique name, id, or attributes.
