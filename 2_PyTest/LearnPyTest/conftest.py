@@ -33,10 +33,21 @@ def tc_setup():   # used in 3additems.py
 
 
 
-
 # Your test file test_items.py is using a fixture tc_setup, which is defined in test_conftest.py. 
 # However, for PyTest to automatically detect and use this fixture, the fixture file should be 
 # named conftest.py(not test_conftest.py).
-
 # conftest.py is a special PyTest configuration file that automatically shares fixtures across test files.
 # PyTest does not recognize files named test_conftest.py for global fixtures.
+#--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+# Fixture scopes
+# Fixtures are created when first requested by a test, and are destroyed based on their scope:
+
+# function: the default scope, the fixture is destroyed at the end of the test.
+# class: the fixture is destroyed during teardown of the last test in the class .
+# module: the fixture is destroyed during teardown of the last test in the module.
+# package: the fixture is destroyed during teardown of the last test in the package.
+# session: the fixture is destroyed at the end of the test session.
+
+# @pytest.fixture(scope="session") 
