@@ -12,7 +12,11 @@
 
 import pytest
 
-@pytest.fixture 
+# @pytest.fixture 
+# lets assume that there are 100s of tc, then writing tc_setup as argument everywhere is not good idea
+# so we write @pytest.fixture(autouse=True) then we no need to specify in argument, evry fille will auto use it.
+
+@pytest.fixture(autouse=True)
 def tc_setup():   # used in 3additems.py
 
     print("launch browser")
@@ -22,6 +26,10 @@ def tc_setup():   # used in 3additems.py
     print("Logoff")
     print("close Browser")
 
+
+# we will use it like this
+# def testLogin(tc_setup):  # eg. of conftest.py
+#     print("Login Successful")
 
 
 
