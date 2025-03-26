@@ -9,11 +9,11 @@ def testLogin():
     print("Login Successful")
 
 
-@pytest.mark.regression  # tc makred for regression testing
+@pytest.mark.regression  # tc makred for regression testing (user defined)
 def testLogout(): 
     print("Logout succesful")
 
-@pytest.mark.skip    # tc marked for skipping while execution
+@pytest.mark.skip    # tc marked for skipping while execution (pre defined keyword)
 def testCalculation():
     assert 2+2 == 4
 # 1 skipped
@@ -32,3 +32,5 @@ def testfunctionality():
 
 
 # == == == == == == == == == == == == == == == == 3 passed, 12 deselected, 3 warnings in 0.03s == == == == == == == == == == == == == == == == =
+
+# to run --> pytest -m sanity or pytest -m regression

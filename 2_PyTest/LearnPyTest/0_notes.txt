@@ -1,4 +1,7 @@
 
+Pytest: Its a framework for testing. Testing Framework of python which helps us write our test and also uses selenium.
+url - https://docs.pytest.org/en/stable/getting-started.html
+
 right corner 3 dots click --> configure editor click --> search json --> file is created at corner
 setting.json open and add these three lines --> 
     "python.testing.pytestEnabled": true,

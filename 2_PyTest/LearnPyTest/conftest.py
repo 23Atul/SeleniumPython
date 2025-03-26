@@ -1,4 +1,6 @@
 
+# this file was "test_7conftest.py" but renamed to "conftest.py" as conftest.py is its standard name and cant be changed
+
 # conftest.py --> it is an configuration file which holds the methods or modules which are common to 
 # all the test cases, so that we do not need to write the same code again and again.
 
